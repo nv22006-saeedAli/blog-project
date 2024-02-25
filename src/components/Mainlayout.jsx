@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Footer from './Footer';
+import Header from "./Header"
 
-const Mainlayout = () => {
-  return (
-    <div>Mainlayout</div>
-  )
-}
+const Mainlayout = ({ children }) => {
+  return( 
+  <div>
+    <Header />
+    {children}
+    <Footer/>
+  </div>
+   );
+};
 
 export default Mainlayout
