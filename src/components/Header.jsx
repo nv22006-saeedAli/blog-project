@@ -33,12 +33,7 @@ const Header = () => {
           <ul className="flex gap-x-5 font-semibold">
            {navItemsInfo.map((item)=> (
             <NavItem key={item.name} name={item.name} />
-           ))}
-           
-            <li className=" relative group ">
-              <a href="/" className="px-4 py-2">Home</a>
-              <span className="text-blue-500 absolute transition-all duration-500 font-bold right-0 top-0 group-hover:right-[90%] opacity-0 group-hover:opacity-100">/</span>
-            </li>
+           ))}          
             
           </ul>
           <button className="border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transtiotion-all duration-300">Sign in</button>
